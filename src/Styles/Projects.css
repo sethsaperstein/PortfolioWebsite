@@ -1,0 +1,46 @@
+
+.Projects {
+	height: 700px;
+}
+
+.ProjectsHeading {
+	font-family: "Futura";
+	font-size: 2.7em;
+	padding-top: 60px;
+	padding-left: 150px;
+	width: 170px;
+	height: 60px;
+	overflow: hidden;
+	cursor: default;
+}
+
+.ProjectContainer {
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10vw;
+	padding-right: 15vw;
+	padding-top: 20px;
+}
+
+
+.ProjectItem {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	flex: 1;
+	flex-basis: 25%;
+	text-align: center;
+}
+
+.ProjectItem > img {
+	max-width: 309px;
+	max-height: 250px;
+}
+
+.ProjectItem > img:hover {
+	filter: brightness(1.2);
+}

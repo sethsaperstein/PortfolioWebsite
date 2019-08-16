@@ -1,0 +1,49 @@
+.About {
+	display: block;
+	height: 680px;
+	background-color: #FFFFFF;
+}
+
+.AboutHeading {
+	float: left;
+	font-family: "Futura";
+	font-size: 2.7em;
+	padding-top: 0px;
+	padding-left: 150px;
+	margin-top: 60px;
+	width: 100px;
+	cursor: default;
+}
+
+.AboutParagraph {
+	float: left;
+	padding-left: 300px;
+	padding-top: 65px;
+	padding-right: 3%;
+	width: 60%;
+	cursor: default;
+}
+
+.AboutParagraph p {
+	font-family: "Futura";
+	font-size: 1.2em;
+}
+
+
+@media all and (max-width: 1400px) {
+
+	.About {
+		height: 1100px;
+	}
+}
+
+@media all and (max-width: 640px) {
+
+	.About {
+		height: 1300px;
+	}
+
+	.AboutParagraph {
+		padding-left: 100px;
+	}
+}
