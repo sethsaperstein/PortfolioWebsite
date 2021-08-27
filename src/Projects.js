@@ -14,19 +14,19 @@ class Projects extends React.Component {
 					Projects
 				</div>
 				<div className="ProjectContainer">
-					<a className="ProjectItem" href="https://www.youtube.com/channel/UC4qLRnMVVs1TMoGE-bisZ-w/playlists" target="_blank">
-						<img src={Project1} alt="tutorial 1" />
+					<a className="ProjectItem" href="https://medium.com/@sethsaper/my-data-lake-story-how-i-built-a-serverless-data-lake-on-aws-95a820a28891" target="_blank">
+						<img src={Project1} alt="My Data Lake Story: How I Built a Serverless Data Lake on AWS" />
 					</a>
 					<a className="ProjectItem" href="https://github.com/sethsaperstein/XMode-Portfolio/tree/master/stock_project" target="_blank">
-						<img src={Project2} alt="tutorial 2" />
+						<img src={Project2} alt="Stock Project" />
 					</a>
 				</div>
 				<div className="ProjectContainer">
 					<a className="ProjectItem" href="https://github.com/sethsaperstein/XMode-Portfolio/tree/master/home_work_project" target="_blank">
-						<img src={Project3} alt="tutorial 5" />
+						<img src={Project3} alt="Home Work Project" />
 					</a>
-					<a className="ProjectItem">
-						<img src={Project4} alt="tutorial 6" />
+					<a className="ProjectItem" href="https://medium.com/@sethsaper/problem-roulette-effectiveness-study-3bdbd5b7dca8" target="_blank">
+						<img src={Project4} alt="Problem Roulette Effectiveness Study" />
 					</a>
 				</div>
 			</div>
