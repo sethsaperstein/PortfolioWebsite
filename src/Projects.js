@@ -1,33 +1,65 @@
 import React from 'react';
-import './Styles/Projects.css';
-import Project1 from './Images/project-1.png';
-import Project2 from './Images/project-2.png';
-import Project3 from './Images/project-3.png';
-import Project4 from './Images/project-4.png';
+import './Styles/CardSections.css';
+import Card from './components/card/Card';
 
 class Projects extends React.Component {
 
 	render() {
 		return (
-			<div className="Projects">
-				<div className="ProjectsHeading">
+			<div className="container" style={{backgroundColor: "#1CAFA9"}}>
+				<div className="title" style={{color: "white"}}>
 					Projects
 				</div>
-				<div className="ProjectContainer">
-					<a className="ProjectItem" href="https://medium.com/@sethsaper/my-data-lake-story-how-i-built-a-serverless-data-lake-on-aws-95a820a28891" target="_blank">
-						<img src={Project1} alt="My Data Lake Story: How I Built a Serverless Data Lake on AWS" />
-					</a>
-					<a className="ProjectItem" href="https://github.com/sethsaperstein/XMode-Portfolio/tree/master/stock_project" target="_blank">
-						<img src={Project2} alt="Stock Project" />
-					</a>
-				</div>
-				<div className="ProjectContainer">
-					<a className="ProjectItem" href="https://github.com/sethsaperstein/XMode-Portfolio/tree/master/home_work_project" target="_blank">
-						<img src={Project3} alt="Home Work Project" />
-					</a>
-					<a className="ProjectItem" href="https://medium.com/@sethsaper/problem-roulette-effectiveness-study-3bdbd5b7dca8" target="_blank">
-						<img src={Project4} alt="Problem Roulette Effectiveness Study" />
-					</a>
+				<div className="body">
+					<Card 
+						imageUrl='https://www.lynbrooklibrary.org/wp-content/uploads/2020/06/coming-soon-neon-sign.jpg'
+						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 4: The Retro)'
+						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
+						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-4-the-retro-7d45f36f5b0f'
+						date='October 10 2021'
+					/>
+					<Card 
+						imageUrl='https://www.lynbrooklibrary.org/wp-content/uploads/2020/06/coming-soon-neon-sign.jpg'
+						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 3: The Exchange)'
+						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
+						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-3-the-exchange-64d5494b4bda'
+						date='October 3 2021'
+					/>
+					<Card 
+						imageUrl='https://www.lynbrooklibrary.org/wp-content/uploads/2020/06/coming-soon-neon-sign.jpg'
+						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 2: The Backend)'
+						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
+						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-2-the-backend-2eaccbb802a9'
+						date='September 26 2021'
+					/>
+					<Card 
+						imageUrl='https://www.lynbrooklibrary.org/wp-content/uploads/2020/06/coming-soon-neon-sign.jpg'
+						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 1: The UI)'
+						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
+						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-1-the-ui-391fb6c61266'
+						date='September 19 2021'
+					/>
+					<Card 
+						imageUrl='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqV98L1BtlyUQMezKfmC9hHHVDuLOMQDQxQw&usqp=CAU'
+						title='My Data Lake Story: How I Built a Serverless Data Lake on AWS'
+						text='In this post, I’ll explain the design decisions, trade-offs, and complications of building a cloud-native data lake.'
+						link='https://medium.com/@sethsaper/my-data-lake-story-how-i-built-a-serverless-data-lake-on-aws-95a820a28891'
+						date='Aug 21 2019'
+					/>
+					<Card 
+						imageUrl='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAToAAAChCAMAAABgSoNaAAAA+VBMVEW01tkamrapxsn///8/NzH61LDJ4eRbTkVVTES32t1qc3JNQjs7MCqtzM+x1dhdSj80o7s9d4JvbmgAlrSn0tZ5ushIRD9TR0Dl8PH+8ugaGxvo1bxvgoQAkrAMCAfV1cbo6eq63ebT5+hdscaDxdSPxNNOrsU3MS4SFhc1Jx/uyqj/2rXQ5efZ7vNOTk5UQjeet7hjYVuFk5JeWFGjjHe2nIPdvJ1vYVX+7NzL1cy91tTy1LWaz9xWV1SNnp17hYKXrq1GMiWAb2CQfWrkwqGsl4Kip5/Iqo/j1cD/9/D+3b9uus1iZ2g1PDxRXl8mKSphcXM/cXtOYWKC6Gp3AAAJjElEQVR4nO2dC1vaSBeAQ7jIyMWU7AK1xZWLiBUKQqutUqC1++nW7u37/z9mz5mAJBDCzEjIUeZ9HrlMJDm8nJk5JJoYtZRGDSOVNzSIvIdUCFHsCFqdMlqdMlqdMlqdMlqdMlqdMlqdMs9DHYs6AD+egzpmjMyoY/DhGahjZqFAMe3Iq2P5frrbizoKP6irY72LTIlk0lFVN3XFcuNMOl3q8RZq4x1JdcyYXPTQ3mSA5sZs3kIIgupQUyYzZszcB3GgzsSWr31i5uipY/nRIFNKly7yo3SJmxszaMnQG+9oqWMs10/zVEunB9P79Ji3RB3aMpTUobjMTNgczL2MyXTWrYaZ425pSZxDob8/GBGTR+WwDmO9/ZXiMPUyF8TMEck6EFcIEgd0Ta3OD6hGgsWlSyPGiA13FNSx1WOci4v+xCRlj4Q6c704yDsgXRhFHewcCuog7QSyjgNfMqIO9hEa6oTSjqubaHVe1qcd9lYkF3Woc4ioM5dEFR9Jp6+urr59u/0G7YWoI3VBQ53B+rMvYI6m29sPHz5+vLu7+/79HZJMJs8vS+kMpd0nVNTlnGz7PtXkAPdJFyVadTERdU7alW49qhY4vyoNog7TDRV1BqZd5jLAXPL8A6XShJA6TLuroKRLJu8SpHaekFEHaZe5CzSXvMwQKk0oqWOjvWBzySSl0oSSOiP3e3B/TZ7/j1J/paTOeOMI8rXGW38jsl/WgZC6PFd3eesz4r27/ajVBcDVnQ+Kp++W1N0WTy+1utU46r4VS8tZ96GYeKfVrcbpsMm77z5D3d2l7rAB5IOmiSRBdXSimaoLgJi6qAOYo9Upo9Upo9Upo9Upo9Upo9Upo9Upo9Upo9Wpkq+9/vTp0+uVwMI/9K5OX/LleADH/JZOtMazUeeY0+r8WVDnyDo+9jTSidYgq+545szrjk60BlV1xy51x1rdOlaqO34p6vLyCK54RYdVyTqFIMM/HdYvljy/ir1dzzTxtLEutCDdSKuzY7LYKupm5YjaDCsdo2iQbsiq80Wr80VEXVtwRNLqlhGMcjvqJGeWjajzndCE1NV8wvVZ23bUSf7+JtTlP9/c3C+uOJ8SMAej3ZK7/Oc3N/fX3uaXqi5/z3e+XXva8jUhc5h3Xkv535bX9mLVXTv7Le/d5WhbUBzSdheyqbaztjceoS9UXf6z82Z/xMvlGp4WuVYWGeXcwAvxdTV83R/O2m4823ih6mZZ90PSF5JalrxT6owb/mZfL/ZDkZLYZ0j84XPY4sWqu0Z39x5T5ZTYtwkYFr2ZB12Xr827hRerLm9cf74GCYyl2rVarZ1iMMMKfxHDF85ehy901rYj6ozHM5679/fIfIdd2E+0VOu9ZHU+7MTXf9tGf7NbflOpcKW2Q2y+wI5cnW3P72fx2a5At6nOblSHsLFhtWHHrGr1wbYfquXysAlL6lVg+ABL4RE8H1arUatrVqvW9N6GmHmAEDCnYW9b3Uk8btlNmN1i9kM83rSrzvtq2LgE6Vh2Ix6v4AKILlJ1dh0ixAd1DKjjhDeLs7ptdTErHj+p4NbrdireqQwhhvpDB5+exMuNxhAXozp4MKxEnHWL6lKNRuPBibPRqG99rKugMPwAh1Y5fmKX49UKjBvleApDitmwaIjqICN/qYhHtR11wwoAcbb5/fanCfACkQzjHbBjWU5sqA1/rBj45OogGSsSUW1HXTmVag+xw+Llcaytq4vFYLyAAQ1GO/j0YNDDEGDYQ3Xxcof3ZK6uLBPV9sa6VGU61jW3r66CE8OQ99mGbfG5ANseh1+YdBto10m7yNVZ03s+1p2cnOBY16nXH1xD3dbU4cQKMyuKgrDa+BibhvBplptDPteCOvxpRF3XcXX2XN2wYvMaoe0t67b4bQJyKob1SarCJ9x4qsNb+DSRwmBnxYlFQF0HaM7U2c64zBu3X5zAhqoYA0yqPKssPoRU+adZtrAHd7g6/IUygboOqS+qQ8qVCLLOalr81tluxWo2efrDPaqEW/4IbuviUTF+Ubhe8T1wPb9K3Aif/5xeMU4QV0+MNTlOQM2mNQ1/2vokdVEcTAyA9Y5araPW/Kwc7C02/CX3V8TSMT7vPSdTckeHgEfd4eHRW61uPcxXneRpdXZU3Z8tH3WSJ0vcUXV/Hfmok7zWxI6qe+unTvJ/TXZU3chH3d9anQBssqyu9V6rE8FcVnf0j1YnhI862bOb7qg69veyOtmzJe6quvetJXWyF3PaVXX/HC1NE7InmtxVdX1U95hmvDiR/RfiHVVnjBazrvXnrqqLvSpIMYCxzvW02Do8lVtBoaCiTvqf46XUMWaYCur+PdiToQQzbGnO6eHhqdTrARV1huwVVMTVMSM3GQ/S8lGJqyuVMqfAsjoEL5sQnrrYq6vxyDRkrkAjpg7W1+sXDroHe+lX8vxfVBx4anE86pymVgafCKr7VyHIg4Nud4D6RNNvvTrspaPxXneaOgfyiOYKZl3CwaXO3SS6IuUgUd8+1/dUdZi/vf5Ftyv87jdDyYNwP90Q8Hb3R721nTdIHWPmiPfSHeSgu1fo9wKTL0Adm2S+Znaar4lBgLuAg4lsdJbYdc6C1AVk3egsGyUYeqQBAKrqevuRAuaK0UYAqKnDKSZCxph2ZrQxBM6xpE664oL10Fz2C6nTrnmhqs74wse6M1JX0/FCVB3rZ50prkjpymFeiKozZ9VBNmigjhaa6tjP7KM7Qtfm9EJSHZs8mktk30cdzSpIqssVXQV9ltQl61xQVOeUdHN3socStwRBdU5J51JHtLijqO6LV10iS7O4o6fusaRzQepaiTPIqWO5ZXM0izt66n4uq0ucUZwpqKljE9/9q0Wtbj1+4mgWd8TULZR0ri5LbzcALXXMXHU4hGBxR0zdYknnSjtyxR0pdcHH4PLE3D3lmok5c7PkzJU5h112f7Pbe3KZrZ51mxYHb8avpHN12cmGN/lEearqNi/OzK07ZF7c/Ca3ry4EcUAx2BwUdyFk+nbVhSMutx/YXbm7XhjbVR3t5dWFI87MTdaaS2QvQtr2VtSFJA5YXdLNOeuH9cGFri48cbm+0J9VFcPosk4AoaoLT5xp9kTEbb64cyM76ImrC1OcaQaXdC53kxCDkJMnfKGfECPGkk7QXCL7JdRAZPqtmLp8uCln9oqi6hJnIRR3HoTlCanLhc04URSnF3Y0gt2WxJ4TJpVIVC4SS0Ld80SrU0arU0arU0arU0arU0arU0arU0arU+YpBxN3m/8AdAm88CW1DbAAAAAASUVORK5CYII='
+						title='Home and Work Location Based Predictive Modeling'
+						text="In this deck, I'll explain the models used to predict a users home and work locations based on a series of location points over the course of months."
+						link='https://github.com/sethsaperstein/XMode-Portfolio/tree/master/home_work_project'
+						date='Aug 15 2018'
+					/>
+					<Card 
+						imageUrl='data:image/jpeg;base64,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'
+						title='Location Based Algorithmic Trading Strategy'
+						text="In this deck, I'll explain the strategies tested on quarterly revenue predictions based on location data."
+						link='https://github.com/sethsaperstein/XMode-Portfolio/tree/master/stock_project'
+						date='Aug 15 2018'
+					/>
 				</div>
 			</div>
 		)

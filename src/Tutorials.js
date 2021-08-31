@@ -1,41 +1,37 @@
 import React from 'react';
-import './Styles/Tutorials.css';
-import Tutorial1 from './Images/tutorial-1.png';
-import Tutorial2 from './Images/tutorial-2.png';
-import Tutorial3 from './Images/tutorial-3.png';
-import Tutorial5 from './Images/tutorial-5.png';
-import Tutorial6 from './Images/tutorial-6.png';
-import Tutorial7 from './Images/tutorial-7.png';
+import './Styles/CardSections.css';
+import Card from './components/card/Card';
 
 class Tutorials extends React.Component {
 
 	render() {
 		return (
-			<div className="Tutorials">
-				<div className="TutorialsHeading">
+			<div>
+				<div className="title">
 					Tutorials
 				</div>
-				<div className="TutorialContainer">
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=vLHJbJgfbYQ&t=11s" target="_blank">
-						<img src={Tutorial1} alt="How to Collect Location and Visitation Data in Swift" />
-					</a>
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=LopcHgp1Y-4&t=38s" target="_blank">
-						<img src={Tutorial2} alt="How to Collect and Store Fields for Visitation Data in Swift" />
-					</a>
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=-B-SZgytyzU&t=2s" target="_blank">
-						<img src={Tutorial3} alt="How to Make an API Request in Swift" />
-					</a>
-				</div>
-				<div className="TutorialContainer">
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=0UxiV5sUlcA&t=3s" target="_blank">
-						<img src={Tutorial5} alt="How to Use API Gateway with Kinesis to Send Data to S3 in AWS" />
-					</a>
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=PLtMYA7LpbE&t=3s" target="_blank">
-						<img src={Tutorial6} alt="How to Use Athena with Json Data in AWS" />
-					</a>
-					<a className="TutorialItem" href="https://www.youtube.com/watch?v=jr54fOkT25w&t=3s" target="_blank">
-						<img src={Tutorial7} alt="How to Schedule Athena Queries With Lambda in AWS" />
-					</a>
+				<div className="body">
+					<Card 
+						imageUrl='data:image/png;base64,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'
+						title='How to Use API Gateway with Kinesis to Send Data to S3 in AWS'
+						text=''
+						link='https://www.youtube.com/watch?v=0UxiV5sUlcA&t=3s'
+						date='August 15 2019'
+					/>
+					<Card 
+						imageUrl='https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2019/05/02/QueryServiceLogsAthena1.png'
+						title='How to Use Athena with Json Data in AWS'
+						text=''
+						link='https://www.youtube.com/watch?v=PLtMYA7LpbE&t=3s'
+						date='August 15 2019'
+					/>
+					<Card 
+						imageUrl='data:image/png;base64,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'
+						title='How to Schedule Athena Queries With Lambda in AWS'
+						text=''
+						link='https://www.youtube.com/watch?v=jr54fOkT25w&t=3s'
+						date='August 15 2019'
+					/>
 				</div>
 			</div>
 		)

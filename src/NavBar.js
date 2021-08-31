@@ -34,8 +34,8 @@ class NavBar extends React.Component {
 			        <li><a href={Pdf} target="_blank">RESUME</a></li>
 			        <li onClick={this.scrollAbout}>ABOUT</li>
 			        <li id="Name">SETH SAPERSTEIN</li>
+					<li onClick={this.scrollProjects}>PROJECTS</li>
 			        <li onClick={this.scrollTutorials}>TUTORIALS</li>
-			        <li onClick={this.scrollProjects}>PROJECTS</li>
 			    </ul>
 			    <DropDown onClick={this.state.togglePressed} scrollAbout={this.scrollAbout} scrollTutorials={this.scrollTutorials} scrollProjects={this.scrollProjects}/>
 		  </nav>
