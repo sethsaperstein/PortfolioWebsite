@@ -9,13 +9,15 @@ class About extends React.Component {
 				<div className="AboutHeading">About</div>
 				<div className="AboutParagraph">
 					<p>
-						I am an undergraduate student at the University of Michigan pursuing my Bachelors in Data Science, Economics, and Mathematics of Finance and Risk Management. At Michigan, I focused my studies on machine learning methods for educational development tools and their implications on learning. I am particularly interested in harnessing alternative and emerging data for social good. I also have a growing interest in data ethics relating to applications in both finance and ad-tech.
+						I'm currently a Big Data Engineer at Rocket Homes, focused on building tooling to simplify processes related to data ingestion, transformation, storage, and analysis, primarily in relation to real-estate data. I graduated from University of Michigan in 2019 after pursuing my Bachelors in Data Science, Economics, and Mathematics of Finance and Risk Management. I am particularly interested in harnessing alternative and emerging data for social good. I also have a growing interest in data ethics and data transparency with a firm belief that the rights to our data are human rights.
 						<br/><br/>
-						My interests vary widely though, as many of my projects outside of academia are typically related to the crossroads of iOS app development, cloud-based technologies, and data pipelining. This unique skill set allows me the flexibility to be a team player and collaborate effectively with people of all disciplines.
+						My interests vary widely though, both in and out of software engineering. Whether it's designing large scale systems such as betting exchanges or hitting the slopes to catch some fresh "pow", I'm passionate about all I do.
 						<br/><br/>
-						Competencies: data science, machine learning, cloud computing, Hadoop, ETL pipelines, AWS, Python/SQL/c++/R/Swift/ReactJS
+						Competencies: AWS Big Data Technologies, Spark, Kafka, Airflow, Terraform, CloudFormation, Troposphere
 						<br/><br/>
-						I am seeking data engineering, data science, and data analytics opportunities in the New York, San Francisco, and Chicago metropolitan areas, and would love to connect with you!
+						Primary Languages: Python, Scala, ReactJS, Swift, C++
+						<br/><br/>
+						I'm always interested to hear from other professionals in the industry and would love to connect with you! Also feel free to reach out if you're looking to collaborate on a project!
 					</p>
 				</div>
 			</div>

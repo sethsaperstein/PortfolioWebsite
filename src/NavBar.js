@@ -12,6 +12,7 @@ class NavBar extends React.Component {
 		this.scrollAbout = props.scrollAbout;
 		this.scrollTutorials = props.scrollTutorials;
 		this.scrollProjects = props.scrollProjects;
+		this.scrollBlogs = props.scrollBlogs;
 
 		this.handleToggle = this.handleToggle.bind(this);
 	}
@@ -23,21 +24,18 @@ class NavBar extends React.Component {
 		}));
 	}
 
-	
-
-
 	render() {
 		return (
 			<nav className="nav">
 			    <ul className="NavBar-Container">
 			    	<li onClick={this.handleToggle} id="Toggle">Menu</li>
-			        <li><a href={Pdf} target="_blank">RESUME</a></li>
-			        <li onClick={this.scrollAbout}>ABOUT</li>
-			        <li id="Name">SETH SAPERSTEIN</li>
+			        <li><a href={Pdf} target="_blank" rel="noopener noreferrer">RESUME</a></li>
 					<li onClick={this.scrollProjects}>PROJECTS</li>
+			        <li id="Name">SETH SAPERSTEIN</li>
+					<li onClick={this.scrollBlogs}>BLOGS</li>
 			        <li onClick={this.scrollTutorials}>TUTORIALS</li>
 			    </ul>
-			    <DropDown onClick={this.state.togglePressed} scrollAbout={this.scrollAbout} scrollTutorials={this.scrollTutorials} scrollProjects={this.scrollProjects}/>
+			    <DropDown onClick={this.state.togglePressed} scrollAbout={this.scrollAbout} scrollTutorials={this.scrollTutorials} scrollProjects={this.scrollProjects} scrollBlogs={this.scrollBlogs}/>
 		  </nav>
 		)
 	}
@@ -49,10 +47,11 @@ function DropDown(props) {
 		return (
 			<div>
 				<ul className="DropDown">
-					<li><a href={Pdf} target="_blank">RESUME</a></li>
-			        <li onClick={props.scrollAbout}>ABOUT</li>
+					<li><a href={Pdf} target="_blank" rel="noopener noreferrer">RESUME</a></li>
+					<li onClick={props.scrollProjects}>PROJECTS</li>
+			        <li onClick={props.scrollBlogs}>BLOGS</li>
 			        <li onClick={props.scrollTutorials}>TUTORIALS</li>
-			        <li onClick={props.scrollProjects}>PROJECTS</li>
+			        
 			    </ul>
 			</div>
 		)
