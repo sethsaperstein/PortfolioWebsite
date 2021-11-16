@@ -16,28 +16,28 @@ class Projects extends React.Component {
 						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 4: The Retro)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
 						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-4-the-retro-7d45f36f5b0f'
-						date='November 8 2021'
+						date='TBD'
 					/>
 					<Card 
 						imageUrl={require('../src/Images/coming-soon.jpeg')}
 						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 3: The Exchange)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
 						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-3-the-exchange-64d5494b4bda'
-						date='November 5 2021'
+						date='TBD'
 					/>
 					<Card 
 						imageUrl={require('../src/Images/coming-soon.jpeg')}
 						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 2: The Backend)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
 						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-2-the-backend-2eaccbb802a9'
-						date='November 1 2021'
+						date='TBD'
 					/>
 					<Card 
-						imageUrl={require('../src/Images/coming-soon.jpeg')}
-						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 1: The UI)'
+						imageUrl={require('../src/Images/sports-betting.jpeg')}
+						title='How I Built This: A Sports Betting Exchange (Part 1: Front-End)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
-						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-1-the-ui-391fb6c61266'
-						date='October 29 2021'
+						link='https://medium.com/@sethsaper/how-i-built-this-a-sports-betting-exchange-part-1-the-ui-74532af6d3ef'
+						date='November 16 2021'
 					/>
 					<Card 
 						imageUrl={require('../src/Images/data-lake-story.png')}
