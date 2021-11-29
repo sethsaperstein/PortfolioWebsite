@@ -12,29 +12,29 @@ class Projects extends React.Component {
 				</div>
 				<div className="body">
 					<Card 
-						imageUrl={require('../src/Images/coming-soon.jpeg')}
-						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 4: The Retro)'
+						imageUrl={require('../src/Images/sports-betting-4.jpeg')}
+						title='How I Built This: A Sports Betting Exchange (Part 4: The Retro)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
-						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-4-the-retro-7d45f36f5b0f'
-						date='TBD'
+						link='https://medium.com/@sethsaper/how-i-built-this-a-sports-betting-exchange-part-4-the-retro-754e8d5e37ab'
+						date='December 6 2021'
 					/>
 					<Card 
-						imageUrl={require('../src/Images/coming-soon.jpeg')}
-						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 3: The Exchange)'
+						imageUrl={require('../src/Images/sports-betting-3.jpeg')}
+						title='How I Built This: A Sports Betting Exchange (Part 3: The Exchange)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
-						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-3-the-exchange-64d5494b4bda'
-						date='TBD'
+						link='https://medium.com/@sethsaper/how-i-built-this-a-sports-betting-exchange-part-3-the-exchange-b6a09d0bd9a7'
+						date='November 29 2021'
 					/>
 					<Card 
-						imageUrl={require('../src/Images/coming-soon.jpeg')}
-						title='Coming Soon — How I Built This: A Sports Betting Exchange (Part 2: The Backend)'
+						imageUrl={require('../src/Images/sports-betting-2.jpeg')}
+						title='How I Built This: A Sports Betting Exchange (Part 2: The Backend)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
-						link='https://medium.com/@sethsaper/coming-soon-how-i-built-this-a-sports-betting-exchange-part-2-the-backend-2eaccbb802a9'
-						date='TBD'
+						link='https://medium.com/@sethsaper/how-i-built-this-a-sports-betting-exchange-part-2-the-backend-26f5c40808e7'
+						date='November 29 2021'
 					/>
 					<Card 
 						imageUrl={require('../src/Images/sports-betting.jpeg')}
-						title='How I Built This: A Sports Betting Exchange (Part 1: Front-End)'
+						title='How I Built This: A Sports Betting Exchange (Part 1: The Front-End)'
 						text="In this post, I'll walk you through my journey of what it was like bringing an idea from inception to reality, including all the hurdles faced along the way."
 						link='https://medium.com/@sethsaper/how-i-built-this-a-sports-betting-exchange-part-1-the-ui-74532af6d3ef'
 						date='November 16 2021'

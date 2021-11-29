@@ -13,9 +13,9 @@ class About extends React.Component {
 						<br/><br/>
 						My interests vary widely though, both in and out of software engineering. Whether it's designing large scale systems such as betting exchanges or hitting the slopes to catch some fresh "pow", I'm passionate about all I do.
 						<br/><br/>
-						Competencies: AWS Big Data Technologies, Spark, Kafka, Airflow, Terraform, CloudFormation, Troposphere
+						Languages: Python, C++, SQL, Scala, ReactJS, Java, Swift
 						<br/><br/>
-						Primary Languages: Python, Scala, ReactJS, Swift, C++
+						Technologies:  AWS, Spark, Kafka, Airflow, Terraform, Cloudformation, Troposphere, Airbyte, Hudi, Docker, Jenkins
 						<br/><br/>
 						I'm always interested to hear from other professionals in the industry and would love to connect with you! Also feel free to reach out if you're looking to collaborate on a project!
 					</p>
