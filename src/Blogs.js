@@ -16,7 +16,7 @@ class Blogs extends React.Component {
 						title='Training For a Marathon In 1 Month — Why You Shouldn’t and How I Did'
 						text="How hard is running a marathon? How do people typically train for something like this? Is this even possible in a month? What do I need to get?
                         These are just a few of the many questions that were running through my mind at the time."
-						link='https://medium.com/@sethsaper/coming-soon-training-for-a-marathon-in-1-month-why-you-shouldnt-and-how-i-did-12ecaf6dd048'
+						link='https://medium.com/@sethsaper/training-for-a-marathon-in-1-month-why-you-shouldnt-and-how-i-did-77faaea4d173'
 						date='December 13 2021'
 					/>
                     <Card 
